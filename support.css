@@ -1,0 +1,156 @@
+@import "./fonts.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Basis Grotesque Pro", "Basis Grotesque Pro Bold", "Basis Grotesque Pro Medium", "Basis Grotesque Pro Light";
+  vertical-align: baseline;
+  width: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section__subtitle {
+  font-family: "Basis Grotesque Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 111%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.item__title {
+  font-family: "Basis Grotesque Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  opacity: 0.9;
+  margin-top: 0;
+}
+
+.item__title_blue {
+  color: #0536FC;
+}
+
+.main__text {
+  font-family: "Basis Grotesque Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.small__note {
+  font-family: "Basis Grotesque Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  opacity: 0.35;
+}
+
+.blue__button {
+  padding: 15px 50px;
+  background-color: #0536FC;
+  font-family: "Basis Grotesque Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+}
+
+.support-icon {
+  width: 15px;
+  height: 15px;}
+
+.item_hover:hover {
+  background-color: #0536FC;
+}
+
+.item_hover:hover .item__title_hover {
+  color: #fff;
+}
+
+.item_hover:hover .main__text_hover {
+  color: #fff;
+}
+
+.support {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 4fr));
+  justify-content: space-evenly;
+}
+
+.support-intro {
+  grid-column: span 2;
+  padding: 150px 0 6px 15%;
+}
+
+.support-intro__title {
+  margin-bottom: 30px;
+}
+
+.support-intro__subtitle {
+  margin-bottom: 70px;
+}
+
+.support-main {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  padding-right: 15%;
+  padding-left: 6%;
+}
+
+.support-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.support-item__header {
+  display: flex;
+  margin: 30px 0 70px;
+}
+
+.support-item__title {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.support-item__text {
+  margin-right: 35%;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 708px) {
+  .support {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100%);
+    justify-content: space-evenly;
+  }
+  .support-intro {
+    padding: 50px;
+  }
+  .support-main {
+    grid-column-start: 1;
+    padding-left: 50px;
+  }
+}
